@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S K Liquors – Your Local Experts Since 2006</title>
+<link rel="stylesheet" href="/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- AGE GATE -->
+<div id="age-gate">
+  <div class="logo-ag">S K Liquors</div>
+  <p>By entering this website, you confirm that you are at least <strong>25 years of age</strong> or of legal drinking age in your country.</p>
+  <div class="age-btns">
+    <button class="btn-yes" onclick="enterSite()">Yes, I am 25+</button>
+    <button class="btn-no" onclick="window.location='https://www.google.com'">No, Exit</button>
+  </div>
+  <p class="disclaimer">S K Liquors promotes responsible drinking. Drink responsibly. Excessive alcohol consumption is harmful to health.</p>
+</div>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919821376649?text=Enquiry%20from%20website" class="wa-float" target="_blank" title="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo"><img src="./images/logo1.png" alt="" srcset=""></a>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#spirits">Our Spirits</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero" onclick="toggleMenu()">Home</a>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#spirits" onclick="toggleMenu()">Our Spirits</a>
+  <a href="#experience" onclick="toggleMenu()">Experience</a>
+  <a href="#testimonials" onclick="toggleMenu()">Reviews</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+  <a href="#contact" onclick="toggleMenu()">Contact Us</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge">Andheri East's Finest · Since 2006</div>
+      <h1 class="hero-title">
+        Premium Spirits,<br>
+        <em>Crafted Moments</em>
+      </h1>
+      <p class="hero-sub">Mumbai's trusted liquor destination since 2006. We bring you the world's finest whiskies, wines, rums, and more — curated with expertise and served with passion.</p>
+      <div class="hero-actions">
+        <a href="#spirits" class="btn-primary"><span>Explore Spirits ›</span></a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img class="hero-img-main" src="./images/home1.webp" alt="Premium whiskey collection" loading="eager">
+      <img class="hero-img-side" src="./images/home2.jpg" alt="Wine selection" loading="eager">
+      <img class="hero-img-bot" src="./images/home3.jpg" alt="Spirits bar" loading="eager">
+      <div class="hero-stat-card">
+        <div class="num">18+</div>
+        <div class="label">Years of Excellence</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-inner">
+    <span class="marquee-item"><span class="marquee-dot"></span>Single Malt Whiskey</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Premium Vodka</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Aged Rum</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Fine Wines</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Craft Gin</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Tequila & Mezcal</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Champagne</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Craft Beer</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Brandy & Cognac</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Single Malt Whiskey</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Premium Vodka</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Aged Rum</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Fine Wines</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Craft Gin</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Tequila & Mezcal</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Champagne</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Craft Beer</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Brandy & Cognac</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-imgs reveal-left">
+        <img class="about-img-main" src="./images/about1.jpg" alt="SK Liquors store interior" loading="lazy">
+        <img class="about-img-sec" src="./images/about2.jpg" alt="Premium bottles collection" loading="lazy">
+        <div class="about-badge-img">
+          <div class="big">2006</div>
+          <div class="sm">Est. Mumbai</div>
+        </div>
+      </div>
+      <div class="about-content reveal-right">
+        <div class="section-label">Our Story</div>
+        <h2 class="section-title">Your Local Experts<br>in <em>Fine Spirits</em></h2>
+        <p class="section-sub">S K Liquors has been the cornerstone of Andheri East's spirit culture since 2006. Conveniently located on Mahakali Caves Road, we take pride in offering a curated selection of the world's finest beverages — from single malts and craft gins to aged rums and premium wines.</p>
+        <div class="about-features">
+          <div class="feature-card">
+            <div class="icon">🥃</div>
+            <h4>Wide Selection</h4>
+            <p>Extensive range of spirits, wines, and beers from around the world.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">💡</div>
+            <h4>Expert Advice</h4>
+            <p>Knowledgeable staff offering personalized recommendations for every occasion.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">💰</div>
+            <h4>Best Prices</h4>
+            <p>Competitive pricing across all our premium products — no compromise.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">📍</div>
+            <h4>Prime Location</h4>
+            <p>Easily accessible at Mahakali Caves Road, Andheri East, Mumbai.</p>
+          </div>
+        </div>
+        <div class="about-info">
+          <div class="about-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            +91 98213 76649
+          </div>
+          <div class="about-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            ajay30kapoor@gmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPIRITS -->
+<section id="spirits">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Our <em>Spirit Collection</em></h2>
+      <p class="section-sub">From the smoky highlands of Scotland to the cane fields of the Caribbean — every bottle tells a story.</p>
+    </div>
+    <div class="spirits-grid">
+      <div class="spirit-card reveal delay-1">
+        <div class="spirit-img-wrap">
+          <img src="./images/whisky.webp" alt="Whiskey" loading="lazy">
+          <div class="spirit-overlay"></div>
+          <div class="spirit-tag">Popular</div>
+        </div>
+        <div class="spirit-info">
+          <h3>Whiskey</h3>
+          <p>Single malts, blended Scotch, Indian whisky & bourbon — a journey for the senses.</p>
+          <div class="spirit-arrow">Explore →</div>
+        </div>
+      </div>
+      <div class="spirit-card reveal delay-2">
+        <div class="spirit-img-wrap">
+          <img src="./images/vodka.jpg" alt="Vodka" loading="lazy">
+          <div class="spirit-overlay"></div>
+          <div class="spirit-tag">Trending</div>
+        </div>
+        <div class="spirit-info">
+          <h3>Vodka</h3>
+          <p>Ultra-smooth premium and flavored vodkas for every palate and occasion.</p>
+          <div class="spirit-arrow">Explore →</div>
+        </div>
+      </div>
+      <div class="spirit-card reveal delay-3">
+        <div class="spirit-img-wrap">
+          <img src="./images/rum.webp" alt="Rum" loading="lazy">
+          <div class="spirit-overlay"></div>
+        </div>
+        <div class="spirit-info">
+          <h3>Rum</h3>
+          <p>Dark, white, and aged rums — from the Caribbean to India's finest distilleries.</p>
+          <div class="spirit-arrow">Explore →</div>
+        </div>
+      </div>
+      <div class="spirit-card reveal delay-1">
+        <div class="spirit-img-wrap">
+          <img src="./images/wine.jpg" alt="Wine" loading="lazy">
+          <div class="spirit-overlay"></div>
+          <div class="spirit-tag">New Arrivals</div>
+        </div>
+        <div class="spirit-info">
+          <h3>Wine</h3>
+          <p>Reds, whites, rosés and sparkling wines from renowned vineyards worldwide.</p>
+          <div class="spirit-arrow">Explore →</div>
+        </div>
+      </div>
+      <div class="spirit-card reveal delay-2">
+        <div class="spirit-img-wrap">
+          <img src="./images/gin.jpg" alt="Gin" loading="lazy">
+          <div class="spirit-overlay"></div>
+        </div>
+        <div class="spirit-info">
+          <h3>Gin</h3>
+          <p>Botanical craft gins — from classic London Dry to contemporary artisan blends.</p>
+          <div class="spirit-arrow">Explore →</div>
+        </div>
+      </div>
+      <div class="spirit-card reveal delay-3">
+        <div class="spirit-img-wrap">
+          <img src="./images/taqila.webp" alt="Brandy and Tequila" loading="lazy">
+          <div class="spirit-overlay"></div>
+        </div>
+        <div class="spirit-info">
+          <h3>Brandy & Tequila</h3>
+          <p>Aged French cognacs, fine brandies, premium blanco and añejo tequilas.</p>
+          <div class="spirit-arrow">Explore →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-banner">
+  <div class="stats-grid">
+    <div class="stat-item reveal delay-1">
+      <span class="stat-num" data-count="18">0</span>
+      <div class="stat-label">Years in Business</div>
+    </div>
+    <div class="stat-item reveal delay-2">
+      <span class="stat-num" data-count="500">0</span>
+      <div class="stat-label">Spirit Varieties</div>
+    </div>
+    <div class="stat-item reveal delay-3">
+      <span class="stat-num" data-count="10000">0</span>
+      <div class="stat-label">Happy Customers</div>
+    </div>
+    <div class="stat-item reveal delay-4">
+      <span class="stat-num" data-count="100">0</span>
+      <div class="stat-label"> Satisfaction Rate</div>
+    </div>
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="exp-grid">
+      <div class="exp-content">
+        <div class="section-label">Why Choose Us</div>
+        <h2 class="section-title">The <em>S K Liquors</em><br>Difference</h2>
+        <p class="section-sub reveal">We don't just sell spirits — we help you find the perfect bottle for every story, every celebration, every moment.</p>
+        <div class="exp-list">
+          <div class="exp-item reveal delay-1">
+            <div class="exp-num">01</div>
+            <div class="exp-text">
+              <h4>Curated Selection</h4>
+              <p>Every bottle on our shelves has been carefully chosen for quality, character, and value. We stock only what we truly believe in.</p>
+            </div>
+          </div>
+          <div class="exp-item reveal delay-2">
+            <div class="exp-num">02</div>
+            <div class="exp-text">
+              <h4>Personalized Guidance</h4>
+              <p>Our team brings decades of expertise. Whether you're a connoisseur or a curious beginner, we'll find you the perfect pour.</p>
+            </div>
+          </div>
+          <div class="exp-item reveal delay-3">
+            <div class="exp-num">03</div>
+            <div class="exp-text">
+              <h4>Competitive Pricing</h4>
+              <p>Premium doesn't have to mean expensive. We offer the best prices in Andheri East — guaranteed.</p>
+            </div>
+          </div>
+          <div class="exp-item reveal delay-4">
+            <div class="exp-num">04</div>
+            <div class="exp-text">
+              <h4>Trusted Since 2006</h4>
+              <p>Nearly two decades of serving Mumbai's finest customers has made us a household name in Andheri East.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="exp-visual reveal-right">
+        <img class="exp-img-main" src="./images/exprience1.webp" alt="Expert consultation" loading="lazy">
+        <img class="exp-img-sec" src="./images/experience2.jpg" alt="Whiskey tasting" loading="lazy">
+        <div class="exp-quote">
+          <p>"The finest selection, the warmest service."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Happy Clients</div>
+      <h2 class="section-title">What Our <em>Customers Say</em></h2>
+      <p class="section-sub">Don't just take our word for it — hear from the people who've made S K Liquors their go-to destination.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card reveal delay-1">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Always find what I need here, great selection! The staff is incredibly knowledgeable and always helps me pick the right bottle for any occasion.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">P</div>
+          <div>
+            <div class="testi-name">Priya Sharma</div>
+            <div class="testi-role">Regular Customer</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal delay-2">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Friendly staff and good prices — my go-to liquor store in Mumbai. I've been coming here for years and have never been disappointed.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">R</div>
+          <div>
+            <div class="testi-name">Rahul Verma</div>
+            <div class="testi-role">Loyal Member</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal delay-3">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Convenient location and always a pleasant experience. Ajay and his team really know their spirits — highly recommended for anyone in Andheri!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <div>
+            <div class="testi-name">Sneha Patel</div>
+            <div class="testi-role">Verified Buyer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="faq-img reveal-left">
+        <img src="./images/faq.webp" alt="Whiskey collection" loading="lazy">
+      </div>
+      <div>
+        <div class="section-label">FAQ</div>
+        <h2 class="section-title reveal">Frequently Asked<br><em>Questions</em></h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              What is the official contact number?
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-a">You can reach us at <strong>+91 98213 76649</strong> during store hours. We're happy to assist with product enquiries, availability checks, and recommendations.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              What is the official email ID?
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-a">Our official email is <strong>ajay30kapoor@gmail.com</strong>. Feel free to write to us for wholesale enquiries, special orders, or any feedback.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Who is the owner of S K Liquors?
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-a">S K Liquors is proudly owned and managed by <strong>Ajay Kapoor</strong>, who has been serving the Andheri East community with passion since 2006.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Where is S K Liquors located?
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-a">We are located at <strong>Shop No. 2 & 3, Mahakali Caves Road, Andheri East, Mumbai, Maharashtra – 400093</strong>. Easy to find and accessible by road and metro.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Do you offer bulk or event purchases?
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-a">Yes! We welcome bulk orders for events, parties, and corporate functions. Please contact us in advance so we can ensure availability and arrange the best pricing for you.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              What age is required to purchase alcohol?
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-a">In Maharashtra, the legal drinking age is <strong>25 years</strong>. We strictly follow the law and do not sell alcohol to anyone below this age. Valid ID proof is required.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title reveal">Visit Us or<br><em>Say Hello</em></h2>
+        <p class="section-sub reveal">Drop by the store or reach out online — we'd love to help you find your perfect spirit.</p>
+        <div class="contact-info" style="margin-top:2.5rem">
+          <div class="contact-card reveal delay-1">
+            <div class="contact-icon">📍</div>
+            <div>
+              
+              <h4>Our Location</h4>
+              <p>Shop No. 2 & 3, Mahakali Caves Road,<br>Andheri East, Mumbai – 400093</p>
+            </div>
+          </div>
+          <div class="contact-card reveal delay-2">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:919821376649">+91 98213 76649</a>
+            </div>
+          </div>
+          <div class="contact-card reveal delay-3">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:ajay30kapoor@gmail.com">ajay30kapoor@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/919821376649?text=Enquiry%20from%20website" class="whatsapp-btn" target="_blank" style="margin-top:1.5rem">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="contact-form-wrap reveal-right">
+        <div style="margin-bottom:1.5rem">
+          <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--gold-pale);margin-bottom:0.3rem">Send an Enquiry</h3>
+          <p style="font-size:0.82rem;color:rgba(255,255,255,0.4)">We'll get back to you within 24 hours</p>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Ajay">
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Kapoor">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="you@email.com">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+91 98XXXXXXXX">
+        </div>
+        <div class="form-group">
+          <label>I'm Interested In</label>
+          <select>
+            <option value="">Select category</option>
+            <option>Whiskey</option>
+            <option>Vodka</option>
+            <option>Rum</option>
+            <option>Wine</option>
+            <option>Gin</option>
+            <option>Brandy / Tequila</option>
+            <option>Bulk / Event Order</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us what you're looking for..."></textarea>
+        </div>
+        <button class="btn-form" onclick="handleForm()">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">S K Liquors</div>
+  <p class="footer-copy">© 2024 S K Liquors. All Rights Reserved. Drink Responsibly. For 25+ Only.</p>
+  <div class="footer-links">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#spirits">Spirits</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<script>
+  // Age Gate
+  function enterSite(){
+    document.getElementById('age-gate').classList.add('hidden');
+    document.body.style.overflow='auto';
+  }
+  document.body.style.overflow='hidden';
+
+  // Navbar scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll',()=>{
+    navbar.classList.toggle('scrolled',window.scrollY > 60);
+  });
+
+  // Mobile menu
+  function toggleMenu(){
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+
+  // FAQ accordion
+  function toggleFaq(el){
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!isOpen) item.classList.add('open');
+  }
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting) e.target.classList.add('visible');
+    });
+  },{threshold:0.12});
+  document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>observer.observe(el));
+
+  // Counter animation
+  const counterObs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const el = e.target;
+        const target = parseInt(el.dataset.count);
+        const suffix = target>=10000?'+':(target===100?'%':'+');
+        let start = 0;
+        const step = target/80;
+        const timer = setInterval(()=>{
+          start = Math.min(start+step,target);
+          el.textContent = Math.floor(start).toLocaleString()+suffix;
+          if(start>=target) clearInterval(timer);
+        },20);
+        counterObs.unobserve(el);
+      }
+    });
+  },{threshold:0.3});
+  document.querySelectorAll('.stat-num[data-count]').forEach(el=>counterObs.observe(el));
+
+  // Form handler
+  function handleForm(){
+    alert('Thank you for your enquiry! We will get back to you within 24 hours.\n\nOr call us directly: +91 98213 76649');
+  }
+</script>
+</body>
+</html>
