@@ -698,5 +698,9 @@
             margin-bottom: -50px;
             margin-left: -15px;
         }
+        .hero-content
+        {
+            margin-top: 50px;
+        }
 
     }
