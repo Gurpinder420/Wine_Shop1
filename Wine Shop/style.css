@@ -378,7 +378,7 @@
   }
   .stats-grid{
     display:grid;grid-template-columns:repeat(4,1fr);
-    gap:2rem;max-width:1100px;margin:0 auto;position:relative;z-index:1;
+    gap:2rem;max-width:1100px;margin:0 auto;position:relative;z-index:1;padding-right: 25px;
   }
   .stat-item{text-align:center;padding:2rem 1rem}
   .stat-num{
@@ -558,7 +558,16 @@
     flex-wrap:wrap;gap:1rem;
   }
   .footer-logo{
-    font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--gold);
+    width: 100%;
+    display: flex;
+    align-items: start;
+  }
+  .footer-logo img
+  {
+    height: 10vh;
+    width: 200px;
+    border-radius: 10px;
+   
   }
   .footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.4);letter-spacing:0.05em}
   .footer-links{display:flex;gap:1.5rem}
@@ -656,6 +665,11 @@
             width: 100%;
             overflow: hidden;
            
+        }
+        .footer-links
+        {
+          
+           width: 100%;
         }
 
     }
