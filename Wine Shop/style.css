@@ -671,5 +671,24 @@
           
            width: 100%;
         }
+        .about-img-main
+        {
+            width: 100%;
+        }
+         .about-img-sec
+        {
+            width: 70%;
+        }
+        .stats-grid
+        {
+            
+            gap: 1rem;
+        }
+        .exp-quote
+        {
+            padding: 10px;
+            margin-bottom: -50px;
+            margin-left: -15px;
+        }
 
     }
