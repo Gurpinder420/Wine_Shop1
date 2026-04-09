@@ -15,7 +15,7 @@
 
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
-  html{scroll-behavior:smooth;font-size:16px}
+  html{scroll-behavior:smooth;font-size:16px;margin:0;padding:0;width:100%;overflow-x:hidden}
 
   body{
     background:var(--cream);
@@ -23,6 +23,8 @@
     font-family:'DM Sans',sans-serif;
     font-weight:300;
     overflow-x:hidden;
+    margin:0;padding:0;width:100%;
+    max-width:100vw;
   }
 
   /* ── SCROLLBAR ── */
@@ -629,14 +631,15 @@
     nav.scrolled{padding:0.7rem 1.5rem}
     .nav-links{display:none}
     .hamburger{display:flex}
-    section{padding:5rem 1.5rem}
+    section{padding:5rem 1.5rem;max-width:100vw}
     #hero{padding:80px 1.5rem 3rem}
-    .hero-grid{gap:2rem}
-    .hero-visual{height:300px;margin-top:2rem}
-    .hero-img-main{width:60%;right:10px}
-    .hero-img-side{left:10px;width:35%;top:20px}
-    .hero-img-bot{left:15px;bottom:10px;width:30%}
-    .hero-stat-card{left:10px}
+    .hero-grid{gap:2rem;max-width:100%}
+    .hero-visual{height:300px;margin-top:2rem;max-width:100%}
+    .hero-img-main{width:60%;right:10px;max-width:100%}
+    .hero-img-side{left:10px;width:35%;top:20px;max-width:100%}
+    .hero-img-bot{left:15px;bottom:10px;width:30%;max-width:100%}
+    .hero-stat-card{left:10px;max-width:100%}
+    .container{max-width:100vw;margin:0;padding:0 1.5rem}
     .hero-actions{flex-direction:column;align-items:flex-start}
     .about-features{grid-template-columns:1fr}
     .spirits-grid{grid-template-columns:1fr}
@@ -647,3 +650,12 @@
     .footer-links{justify-content:center}
     .form-row{grid-template-columns:1fr}
   }
+    @media(max-width:480px){
+        .navbar
+        {
+            width: 100%;
+            overflow: hidden;
+           
+        }
+
+    }
